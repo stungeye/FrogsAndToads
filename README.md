@@ -15,7 +15,7 @@
 
 ## Assignment starter
 
-This is the starter project for the MVC and Raylib assignment. The console game is supplied; loss detection, Raylib keyboard input, and graphical board rendering are deliberately unfinished. Students later add mouse input. Follow the assignment sheet for requirements and marks.
+This is the starter project for the MVC and Raylib assignment. A console-based version of the game is provided with some features (loss detection, Raylib keyboard input, and graphical board rendering) deliberately unfinished. Students will also add mouse input. Follow the assignment sheet for requirements and marks.
 
 ## Build and run
 
@@ -31,7 +31,7 @@ Raylib is downloaded into `build/external/raylib-master` and built from source a
 
 ## Game Rules
 
-The game is played on a linear board with N squares. In the variant we will be working with, N is equal to 7. All but the center square are filled with Frogs (F) to the left and Toads (T) to the right. The goal of the game is to get all the frogs and toads to switch places.
+The game is played on a linear board with N squares. In the variant we will be working with, N is equal to 7. All but the centre square are filled with Frogs (F) to the left and Toads (T) to the right. The goal of the game is to get all the frogs and toads to switch places.
 
 The game is played by moving the frogs and toads, one at a time, into an empty square either by sliding into an adjacent square, or by hopping over a single piece of the opposite species into an empty one. Frogs can only move to the right and hop over toads. Toads can only move to the left and hop over frogs.
 
@@ -54,4 +54,4 @@ If, before arriving at the winning state, no further moves are possible, the pla
 An example of a losing state:  
 `. F F T F T T`
 
-From the starting board, selecting one-based positions **5, 3, 2, 1** reaches this losing state. The unfinished starter still reports it as `Playing` until loss detection is completed. The goal board must report `Solved`, even though it also has no legal moves. Restart restores `Playing`; rejected moves and read-only queries preserve the board and status.
+From the starting board, selecting one-based positions **5, 3, 2, 1** reaches this losing state. The unfinished starter project still reports this state as `Playing` until loss detection is completed. The goal board must report `Solved`, even though it also has no legal moves.
