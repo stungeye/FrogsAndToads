@@ -8,13 +8,6 @@ namespace FrogToad{
 
 		const int key{ _getch() };
 
-		// Arrow and function keys produce a 0 or 0xE0 prefix, then a scan code.
-		// Discard the scan code so it cannot become the next command.
-		if (key == 0 || key == 0xE0) {
-			_getch();
-			return;
-		}
-
 		if (key == 'r' || key == 'R') {
 			model.reset();
 			return;
