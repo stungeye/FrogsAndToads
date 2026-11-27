@@ -32,7 +32,7 @@ namespace FrogToad {
 
         /**
          * @brief Attempt a slide or hop in the piece's movement direction.
-         * A slide enters an adjacent empty cell; a hop crosses one opposite-species
+         * A slide enters an adjacent empty cell and a hop crosses one opposite-species
          * piece and lands in an empty cell. Rejected moves leave the board unchanged.
          * @param index Zero-based index of the piece to move.
          * @return True if moved; false for an invalid index, empty cell, or blocked move.
@@ -46,7 +46,7 @@ namespace FrogToad {
 
         std::array<Cell, BoardSize> board{ StartingBoard };
 
-        /** @brief Return whether index is in [0, BoardSize). */
+        /** @brief Return whether index is a valid move give the BoardSize. */
         static constexpr bool isIndexValid(int index);
 
         /** @brief Return +1 for Frog or -1 for Toad; cell must be occupied. */
