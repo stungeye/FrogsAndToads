@@ -15,7 +15,7 @@
 
 ## Assignment starter
 
-This is the starter project for the MVC and Raylib assignment. A console-based version of the game is provided with some features (loss detection, Raylib keyboard input, and graphical board rendering) deliberately unfinished. Students will also add mouse input. Follow the assignment sheet for requirements and marks.
+This is the starter project for the MVC and Raylib assignment. A console-based version of the game is provided but some features are deliberately unfinished. Follow the assignment sheet for requirements and marks.
 
 ## Build and run
 
@@ -27,7 +27,7 @@ Use Visual Studio 2026 with the Desktop development with C++ workload, the v145 
 4. Open `FrogsAndToads.slnx` in Visual Studio. The solution name stays the same regardless of the repository folder name.
 5. Select **Debug | x64**, then build and run. The starter runs the console game by default.
 
-Raylib is downloaded into `build/external/raylib-master` and built from source as part of the solution. No Raylib NuGet installation is required. The download folder is ignored by Git, so each fresh clone needs the setup step.
+Raylib is downloaded into `build/external/raylib-master` and built from source as part of the solution. No Raylib NuGet installation is required. The raylib download folder is ignored by Git, so you'll need to re-run the `build-VisualStudio2026.bat` file every time you clone the repo.
 
 ## Game Rules
 
@@ -54,4 +54,4 @@ If, before arriving at the winning state, no further moves are possible, the pla
 An example of a losing state:  
 `. F F T F T T`
 
-From the starting board, selecting one-based positions **5, 3, 2, 1** reaches this losing state. The unfinished starter project still reports this state as `Playing` until loss detection is completed. The goal board must report `Solved`, even though it also has no legal moves.
+From the starting board, selecting one-based positions **5, 3, 2, 1** reaches this losing state.
