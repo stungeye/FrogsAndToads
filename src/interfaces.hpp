@@ -14,15 +14,14 @@ namespace FrogToad {
         virtual void draw(const BoardModel& model) = 0;
     };
 
-    /** @brief Translates input into model requests; the model validates moves. */
+    /** @brief Translates input into model requests. */
     class IController {
     public:
         virtual ~IController() = default;
 
         /**
-         * @brief Handle input; a call may apply a move or reset the model.
-         * No input, ignored input, and rejected moves leave the model unchanged.
-         * @param model Current game model; move requests can be rejected.
+         * @brief Handle input: Apply a move or reset the model.
+         * @param model Current game model. 
          */
         virtual void handleInput(BoardModel& model) = 0;
     };
