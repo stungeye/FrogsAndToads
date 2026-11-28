@@ -4,9 +4,9 @@
 
 namespace FrogToad {
     /**
-     * @brief Presents the board with Raylib (student exercise).
+     * @brief Presents the board with Raylib.
      * Construct after InitWindow() and destroy before CloseWindow(). 
-     * If using ralib textures, you should load them in the
+     * If using Raylib textures, you should load them in the
      * constructor and unload them in the destructor.
      */
     class RaylibView : public IView {
