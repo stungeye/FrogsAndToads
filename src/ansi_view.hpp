@@ -33,7 +33,6 @@ namespace FrogToad {
         static const char* brown()      { return "\x1b[38;5;180m"; }
         static const char* green()      { return "\x1b[38;5;82m"; }
         static const char* blue()       { return "\x1b[38;5;33m"; }
-        // Available for the student loss-display exercise.
         static const char* red()        { return "\x1b[38;5;196m"; }
     };
 }
